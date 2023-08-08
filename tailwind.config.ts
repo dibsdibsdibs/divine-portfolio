@@ -15,6 +15,13 @@ const config: Config = {
       },
     },
   },
+  colors: {
+    'white': '#EBE8E7',
+    'pink': '#EA7186',
+    'yellow': '#F2C76E',
+    'violet': '#7A77B9',
+    'lilac': '#BD9DEA',
+  },
   plugins: [],
 }
 export default config
