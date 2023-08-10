@@ -14,13 +14,17 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-  },
-  colors: {
-    'white': '#EBE8E7',
-    'pink': '#EA7186',
-    'yellow': '#F2C76E',
-    'violet': '#7A77B9',
-    'lilac': '#BD9DEA',
+    colors: {
+      'white': '#EBE8E7',
+      'pink': '#EA7186',
+      'yellow': '#F2C76E',
+      'violet': '#7A77B9',
+      'lilac': '#BD9DEA',
+    },
+    fontFamily: {
+      'raleway': ['Raleway'],
+      'mango': ['Mango'],
+    }
   },
   plugins: [],
 }
