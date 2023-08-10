@@ -1,8 +1,25 @@
 import Image from "next/image"
-import { FaEnvelope, FaLinkedin, FaSquareFacebook} from "react-icons/fa6"; 
+import About from './components/About'
+import Skills from './components/Skills'
 
 export default function Home() {
-  const aboutMe='Hello! I am Divine Grace Lavente,  an oncoming 4th year BS in Computer Science student in University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the course that I’m currently pursuing. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.';
+  const about={
+    bio:'Hello! I am Divine Grace Lavente,  an oncoming 4th year BS in Computer Science student in University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the course that I’m currently pursuing. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
+    email: '',
+    linkedin: '',
+    fb: '',
+  };
+
+  const skills=[
+    {
+      name: 'Languages',
+      specifics: ['Python', 'C', 'Java', 'PHP', 'HTML', 'CSS', 'Javascript' ,'ReactJS', 'NextJS', 'Tailwind'],
+    },
+    {
+      name: 'Version Control',
+      specifics: ['Git, Github'],
+    }
+  ]
 
   return (
     <main>
@@ -18,18 +35,8 @@ export default function Home() {
           height='700'
         />
       </div>
-      <div className="text-center p-10">
-        <h1 className="text-7xl font-bold">about me</h1>
-        <div className="text-lg font-semibold mt-5">
-          <p>{aboutMe}</p>
-          <p>Feel free to contact me!</p>
-          <div className="text-5xl">
-            <FaEnvelope />
-            <FaLinkedin />
-            <FaSquareFacebook />
-          </div>
-        </div>
-      </div>
+      <About about={about} />
+      <Skills skills={skills} />
     </main>
   )
 }
