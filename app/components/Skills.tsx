@@ -1,12 +1,15 @@
-import Skill from './Skill'
+import Set from './Set'
 
 export default function Skills ({skills}: any){
-    
     return(
         <div className="text-center px-16 py-10 text-violet">
             <h1 className="text-7xl font-bold">skills</h1>
             <div>
-                <Skill />
+                {
+                    skills.map((set: any) => (
+                        <Set set={set} />   
+                    ))
+                }
             </div>
         </div>
     )

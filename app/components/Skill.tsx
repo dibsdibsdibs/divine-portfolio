@@ -1,14 +1,17 @@
-import {FaAngleDown} from "react-icons/fa6"
+import Image from "next/image"
 
-export default function Skill(){
-    const type = 'type'
+export default function Skill({skill}: any){
 
     return(
-        <div className="bg-yellow/20 font-bold rounded-lg p-5">
-            <div className="flex flex-row gap-3 text-2xl text-left items-center">
-                <FaAngleDown />
-                <p>{type}</p>
-            </div>
+        <div className='flex flex-col items-center'>
+            <Image 
+                src={skill.icon}
+                alt={skill.name}
+                height='50'
+                width='50'
+                className=""
+            />
+            <p>{skill.name}</p>
         </div>
     )
 }

@@ -10,20 +10,86 @@ export default function Home() {
     fb: '',
   };
 
+  // const languages=[
+  //   {
+  //     name: 'Languages',
+  //     specifics: ['Python', 'Python', 'C', 'Java', 'NASM Assembly', 'PHP', 'HTML', 'CSS', 'JavaScript', 'ReactJS', 'NextJS']
+  //   }
+  // ]
+
   const skills=[
     {
-      name: 'Languages',
-      specifics: ['Python', 'C', 'Java', 'PHP', 'HTML', 'CSS', 'Javascript' ,'ReactJS', 'NextJS', 'Tailwind'],
+      name: 'Version Control',
+      specifics: [
+        {
+          name: 'Git',
+          icon: '/git.png'
+        },
+        {
+          name: 'Github',
+          icon: '/github.png'
+        },
+      ]
     },
     {
-      name: 'Version Control',
-      specifics: ['Git, Github'],
+      name: 'Database',
+      specifics: [
+        {
+          name: 'MySQL',
+          icon: '/mysql.png'
+        },
+      ]
+    },
+    {
+      name: 'Software',
+      specifics:[
+        {
+          name: 'Microsoft Office',
+          icon: '/office.png'
+        },
+        {
+          name: 'Google Docs Editor',
+          icon: '/gdocs.png'
+        },
+        {
+          name: 'Adobe Photoshop',
+          icon: '/ps.png'
+        },
+        {
+          name: 'Adobe Premiere Pro',
+          icon: '/pr.png'
+        },
+        {
+          name: 'Figma',
+          icon: '/figma.png'
+        },
+        {
+          name: 'Microsoft Office',
+          icon: '/office.png'
+        },
+        {
+          name: 'Google Docs Editor',
+          icon: '/gdocs.png'
+        },
+        {
+          name: 'Adobe Photoshop',
+          icon: '/ps.png'
+        },
+        {
+          name: 'Adobe Premiere Pro',
+          icon: '/pr.png'
+        },
+        {
+          name: 'Figma',
+          icon: '/figma.png'
+        },
+      ]
     }
   ]
 
   return (
     <main>
-      <div className="grid grid-cols-2 place-items-center h-screen bg-violet">
+      <div className="grid grid-cols-2 place-items-center fit-content bg-violet">
         <div className="text-8xl text-center">
           <p className="text-white font-bold">Hello! I am</p>
           <p className="text-yellow font-mango drop-shadow-2xl ">Divine Grace</p>
