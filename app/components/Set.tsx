@@ -13,7 +13,7 @@ export default function Set({set}: any){
             <div className="grid grid-cols-4 gap-y-4 p-5">
                 {
                     skills.map((skill: any) => (
-                        <Skill skill={skill} />   
+                        <Skill skill={skill} key={skill.id} />   
                     ))
                 }
             </div>
