@@ -1,7 +1,6 @@
 import { FaEnvelope, FaLinkedin, FaSquareFacebook} from "react-icons/fa6"; 
 
 export default function About({about}: any){
-    const bio = about.bio;
 
     return(
         <div className="text-center px-16 py-10 text-violet">
