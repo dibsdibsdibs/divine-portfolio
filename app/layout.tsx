@@ -15,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='font-raleway'>
+      <head>
+        <link rel='icon' href='../logo.png' />
+      </head>
       <body className='m-0 bg-white'>
         <Header />
         {children}

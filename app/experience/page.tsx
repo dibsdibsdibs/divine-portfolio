@@ -6,12 +6,12 @@ export default function Experience(){
         {
             id: 'exp_1',
             year: 'Present',
-            xp: 'I finished my 200 hours internship at Aureal Industry Corp.!'
+            xp: 'I am currently working as a Software Engineer Intern at The BLOKC!'
         },
         {
             id: 'exp_2',
             year: '2023',
-            xp: 'I am currently working as a Software Engineer Intern at The BLOKC!',
+            xp: 'I finished my 200 hours internship at Aureal Industry Corp.!',
         }
     ]
 

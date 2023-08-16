@@ -7,7 +7,7 @@ function Header() {
         <div className="flex justify-between font-bold w-1/3">
             <Link href="/">Home</Link>
             <Link href="../experience">Experience</Link>
-            <a>Projects</a>
+            <Link href="../projects">Projects</Link>
             <a>Contact</a>
         </div>
       </div>
