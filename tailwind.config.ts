@@ -24,7 +24,7 @@ const config: Config = {
     fontFamily: {
       'raleway': ['Raleway'],
       'mango': ['Mango'],
-    }
+    },
   },
   plugins: [],
 }

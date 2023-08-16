@@ -1,3 +1,4 @@
+'use Client';
 import Image from "next/image"
 import About from './components/About'
 import Skills from './components/Skills'
