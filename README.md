@@ -1,4 +1,4 @@
-This is my website portfolio!
+**This is my website portfolio!**
 
 Tools used: 
 <p align="center">
@@ -6,3 +6,4 @@ Tools used:
     <img src="https://skillicons.dev/icons?i=nextjs,js,tailwind,vercel,github,figma,ps,vscode" />
   </a>
 </p>
+
