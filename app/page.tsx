@@ -1,4 +1,4 @@
-'use Client';
+'use client';
 import Image from "next/image"
 import About from './components/About'
 import Skills from './components/Skills'
@@ -53,7 +53,7 @@ export default function Home() {
         },
         {
           name: 'Typescript',
-          id: 's1-d',
+          id: 's1-h',
           icon: '/ts.png',
         },
       ]
@@ -64,12 +64,12 @@ export default function Home() {
       specifics: [
         {
           name: 'Git',
-          id: 's3-a',
+          id: 's2-a',
           icon: '/git.png'
         },
         {
           name: 'Github',
-          id: 's3-b',
+          id: 's2-b',
           icon: '/github.png'
         },
       ]
@@ -80,7 +80,7 @@ export default function Home() {
       specifics: [
         {
           name: 'MySQL',
-          id: 's4-a',
+          id: 's3-a',
           icon: '/mysql.png'
         },
       ]
