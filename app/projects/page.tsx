@@ -20,7 +20,7 @@ export default function Projects(){
         {
             name: "Personal Website Portfolio",
             id: "p-3",
-            src: "/proj2.png",
+            src: "/proj3.png",
             role: "Dev",
             link: "https://github.com/dibsdibsdibs/divine-portfolio",
         },

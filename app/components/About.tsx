@@ -1,4 +1,4 @@
-import { FaEnvelope, FaLinkedin, FaSquareFacebook} from "react-icons/fa6"; 
+import { FaEnvelope, FaLinkedin, FaDiscord} from "react-icons/fa6"; 
 
 export default function About({about}: any){
 
@@ -15,8 +15,8 @@ export default function About({about}: any){
                     <a href={about.linkedin}>
                         <FaLinkedin />
                     </a>
-                    <a href={about.fb}>
-                        <FaSquareFacebook />
+                    <a href={about.discord}>
+                        <FaDiscord />
                     </a>
                 </div>
             </div>

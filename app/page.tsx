@@ -7,8 +7,8 @@ export default function Home() {
   const about={
     bio:'Hello! I am Divine Grace Lavente,  an oncoming 4th year BS in Computer Science student in University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the course that I’m currently pursuing. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
     email: '',
-    linkedin: '',
-    fb: '',
+    linkedin: 'https://www.linkedin.com/in/divinelavente/',
+    discord: '',
   };
 
   const skills=[
@@ -120,8 +120,8 @@ export default function Home() {
 
   return (
     <main>
-      <div className="grid grid-cols-2 place-items-center fit-content bg-violet">
-        <div className="text-8xl text-center">
+      <div className="grid md:grid-cols-2 place-items-center fit-content bg-violet">
+        <div className="lg:text-8xl md:text-7xl text-6xl text-center">
           <p className="text-white font-bold">Hello! I am</p>
           <p className="text-yellow font-mango drop-shadow-2xl ">Divine Grace</p>
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
           height='700'
         />
       </div>
-      <About about={about} />
+      <About id="about" about={about} />
       <Skills skills={skills} />
     </main>
   )
