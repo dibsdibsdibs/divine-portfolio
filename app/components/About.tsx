@@ -9,7 +9,7 @@ export default function About({about}: any){
                 <p className="text-justify">{about.bio}</p>
                 <p className="mt-10 font-bold">Feel free to contact me!</p>
                 <div className="flex text-5xl flex-row justify-center items-center mt-5 gap-5 text-yellow">
-                    <a href={about.email}>
+                    <a href={`${'mailto:'}${about.email}`}>
                         <FaEnvelope />
                     </a>
                     <a href={about.linkedin}>
