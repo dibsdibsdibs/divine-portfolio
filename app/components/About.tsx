@@ -1,10 +1,12 @@
+import Title from './Title'
+
 import { FaEnvelope, FaLinkedin, FaDiscord} from "react-icons/fa6"; 
 
 export default function About({about}: any){
 
     return(
         <div className="text-center px-16 py-10 text-violet">
-            <h1 className="text-7xl font-bold">about me</h1>
+            <Title title="about" />
             <div className="text-lg font-semibold mt-5">
                 <p className="text-justify">{about.bio}</p>
                 <p className="mt-10 font-bold">Feel free to contact me!</p>
