@@ -1,10 +1,10 @@
-import { FaEnvelope, FaLinkedin, FaDiscord} from "react-icons/fa6"; 
+import { FaEnvelope, FaLinkedin, FaGithub} from "react-icons/fa6"; 
 
 function Footer() {
   const about={
-    email: '',
+    email: 'divinelavente@gmail.com',
     linkedin: 'https://www.linkedin.com/in/divinelavente/',
-    discord: '',
+    github: 'https://github.com/dibsdibsdibs',
   };
 
     return (
@@ -17,8 +17,8 @@ function Footer() {
           <a href={about.linkedin}>
             <FaLinkedin />
           </a>
-          <a href={about.discord}>
-            <FaDiscord />
+          <a href={about.github}>
+            <FaGithub />
           </a>
         </div>
       </div>

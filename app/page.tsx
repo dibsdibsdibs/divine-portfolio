@@ -8,7 +8,7 @@ export default function Home() {
     bio:'Hello! I am Divine Grace Lavente,  an oncoming 4th year BS in Computer Science student in University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the course that I’m currently pursuing. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
     email: 'divinelavente@gmail.com',
     linkedin: 'https://www.linkedin.com/in/divinelavente/',
-    discord: '',
+    github: 'https://github.com/dibsdibsdibs',
   };
 
   const skills=[
