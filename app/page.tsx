@@ -120,12 +120,12 @@ export default function Home() {
 
   return (
     <main>
-      <div className="grid md:grid-cols-2 place-items-center fit-content bg-violet">
-        <div className="lg:text-8xl md:text-7xl text-6xl text-center">
+      <div className="grid md:grid-cols-2 fit-content place-items-center bg-violet">
+        <div className="lg:text-8xl md:text-7xl sm:text-6xl text-3xl text-center">
           <p className="text-white font-bold">Hello! I am</p>
           <div className="flex justify-center items-center">
             <p className="text-yellow font-mango z-10">Divine Grace</p>
-            <p className="text-pink absolute mt-2 ml-3 font-mango">Divine Grace</p>
+            <p className="text-pink absolute lg:mt-2 lg:ml-3 mt-1 ml-2 font-mango">Divine Grace</p>
           </div>
         </div>
         <Image

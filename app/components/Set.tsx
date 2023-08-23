@@ -14,7 +14,7 @@ export default function Set({set}: any){
     return(
         <div className="bg-yellow/20 font-bold rounded-lg p-5 mt-5">
             <a 
-                className="flex flex-row gap-3 text-2xl text-left items-center"
+                className="flex flex-row gap-3 sm:text-2xl text-left items-center"
                 onClick={handleToggle}
             >
                 <FaAngleDown />

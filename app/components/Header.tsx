@@ -15,15 +15,15 @@ function Header() {
   return (
     <div className="sticky top-0 flex flex-wrap items-center justify-between p-5 bg-violet text-white z-50">
       <p className="font-mango text-2xl">Divine</p>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-white border-white">
           <FaBars onClick={HandleMenuToggle} />
         </button>
       </div>
-      <div className={`${"font-bold md:flex md:justify-between md:w-1/4"} ${showMenu === true ? 'w-full block' : 'hidden' }`}>
-        <Link href="/" className='block mt-4 md:inline-block md:mt-0 mr-4'>Home</Link>
-        <Link href="../experience" className='block mt-4 md:inline-block md:mt-0 mr-4'>Experience</Link>
-        <Link href="../projects" className='block mt-4 md:inline-block md:mt-0 mr-4'>Projects</Link>
+      <div className={`${"font-bold lg:flex lg:justify-between lg:w-1/4"} ${showMenu === true ? 'w-full block' : 'hidden' }`}>
+        <Link href="/" className='block mt-4 lg:inline-block lg:mt-0 mr-4'>Home</Link>
+        <Link href="../experience" className='block mt-4 lg:inline-block lg:mt-0 mr-4'>Experience</Link>
+        <Link href="../projects" className='block mt-4 lg:inline-block lg:mt-0 mr-4'>Projects</Link>
       </div>
     </div>
     );
