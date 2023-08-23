@@ -123,7 +123,10 @@ export default function Home() {
       <div className="grid md:grid-cols-2 place-items-center fit-content bg-violet">
         <div className="lg:text-8xl md:text-7xl text-6xl text-center">
           <p className="text-white font-bold">Hello! I am</p>
-          <p className="text-yellow font-mango">Divine Grace</p>
+          <div className="flex justify-center items-center">
+            <p className="text-yellow font-mango z-10">Divine Grace</p>
+            <p className="text-pink absolute mt-2 ml-3 font-mango">Divine Grace</p>
+          </div>
         </div>
         <Image
           src='/id_nobg.png'

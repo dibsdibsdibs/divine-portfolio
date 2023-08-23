@@ -1,4 +1,5 @@
 import Exp from '../components/Exp'
+import Title from '../components/Title'
 
 export default function Experience(){
 
@@ -18,7 +19,7 @@ export default function Experience(){
     return(
         <div className='text-center px-16 py-10 text-violet'>
             <div>
-                <h1 className="text-7xl font-bold">experience</h1>
+                <Title title='experience' />
             </div>
             <hr className="border-4 border-yellow rounded my-5" />
             <div className='font-semibold'>

@@ -1,4 +1,5 @@
 import Repositories from '../components/Repositories';
+import Title from '../components/Title'
 
 export default function Projects(){
 
@@ -29,7 +30,7 @@ export default function Projects(){
     return(
         <div className='text-center px-16 py-10 text-violet'>
             <div>
-                <h1 className="text-7xl font-bold">projects</h1>
+                <Title title='projects' />
                 <div>
                     <Repositories projs={projs} />
                 </div>
