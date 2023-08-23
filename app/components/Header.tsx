@@ -1,15 +1,31 @@
+'use client'
 import Link from 'next/link';
+import { FaBars } from "react-icons/fa6";
+import { useState } from 'react';
 
 function Header() {
-    return (
-      <div className="sticky top-0 flex items-center justify-between p-5 bg-violet text-white z-50">
-        <p className="font-mango text-2xl">Divine</p>
-        <div className="flex justify-between font-bold w-1/4">
-            <Link href="/">Home</Link>
-            <Link href="../experience">Experience</Link>
-            <Link href="../projects">Projects</Link>
-        </div>
+  
+  const [showMenu, setToggleMenu] = useState(false)
+
+  const HandleMenuToggle = () => {
+    setToggleMenu(!showMenu)
+    console.log(showMenu)
+  }
+
+  return (
+    <div className="sticky top-0 flex flex-wrap items-center justify-between p-5 bg-violet text-white z-50">
+      <p className="font-mango text-2xl">Divine</p>
+      <div className="block md:hidden">
+        <button className="flex items-center px-3 py-2 border rounded text-white border-white">
+          <FaBars onClick={HandleMenuToggle} />
+        </button>
       </div>
+      <div className={`${"font-bold md:flex md:justify-between md:w-1/4"} ${showMenu === true ? 'w-full block' : 'hidden' }`}>
+        <Link href="/" className='block mt-4 md:inline-block md:mt-0 mr-4'>Home</Link>
+        <Link href="../experience" className='block mt-4 md:inline-block md:mt-0 mr-4'>Experience</Link>
+        <Link href="../projects" className='block mt-4 md:inline-block md:mt-0 mr-4'>Projects</Link>
+      </div>
+    </div>
     );
   }
   
