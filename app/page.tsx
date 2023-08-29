@@ -121,7 +121,7 @@ export default function Home() {
   return (
     <main>
       <div className="grid md:grid-cols-2 fit-content place-items-center bg-violet">
-        <div className="lg:text-8xl md:text-7xl sm:text-6xl text-3xl text-center">
+        <div className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-center">
           <p className="text-white font-bold">Hello! I am</p>
           <div className="flex justify-center items-center">
             <p className="text-yellow font-mango z-10">Divine Grace</p>
@@ -129,6 +129,7 @@ export default function Home() {
           </div>
         </div>
         <Image
+          priority={true}
           src='/id_nobg.png'
           alt='id_nobg'
           width='500'

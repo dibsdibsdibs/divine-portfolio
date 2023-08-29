@@ -8,6 +8,7 @@ function Project({proj}: any){
                 <Link href={proj.link}>
                     <div>
                         <Image 
+                            priority={true}
                             className='sm:h-44 sm:w-96'
                             src={proj.src}
                             alt={proj.id}

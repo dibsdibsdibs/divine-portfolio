@@ -4,12 +4,10 @@ import { FaBars } from "react-icons/fa6";
 import { useState } from 'react';
 
 function Header() {
-  
   const [showMenu, setToggleMenu] = useState(false)
 
   const HandleMenuToggle = () => {
     setToggleMenu(!showMenu)
-    console.log(showMenu)
   }
 
   return (
@@ -21,9 +19,27 @@ function Header() {
         </button>
       </div>
       <div className={`${"font-bold lg:flex lg:justify-between lg:w-1/4"} ${showMenu === true ? 'w-full block' : 'hidden' }`}>
-        <Link href="/" className='block mt-4 lg:inline-block lg:mt-0 mr-4'>Home</Link>
-        <Link href="../experience" className='block mt-4 lg:inline-block lg:mt-0 mr-4'>Experience</Link>
-        <Link href="../projects" className='block mt-4 lg:inline-block lg:mt-0 mr-4'>Projects</Link>
+        <Link 
+          href="/"
+          className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+          onClick={HandleMenuToggle}
+        >
+          Home
+        </Link>
+        <Link 
+          href="../experience"
+          className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+          onClick={HandleMenuToggle}
+          >
+          Experience
+        </Link>
+        <Link
+          href="../projects"
+          className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+          onClick={HandleMenuToggle}
+        >
+          Projects
+        </Link>
       </div>
     </div>
     );
