@@ -17,7 +17,7 @@ export default function About({about}: any){
                     <a href={about.linkedin}>
                         <FaLinkedin />
                     </a>
-                    <a href={about.discord}>
+                    <a href={about.github}>
                         <FaGithub />
                     </a>
                 </div>
