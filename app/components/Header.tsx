@@ -12,7 +12,12 @@ function Header() {
 
   return (
     <div className="sticky top-0 flex flex-wrap items-center justify-between p-5 bg-violet text-white z-50">
-      <p className="font-mango text-2xl">Divine</p>
+      <Link
+        className="font-mango text-2xl cursor-default"
+        href = "/"
+      >
+        Divine
+      </Link>
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-white border-white">
           <FaBars onClick={HandleMenuToggle} />
