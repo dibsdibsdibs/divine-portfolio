@@ -1,5 +1,4 @@
 'use client';
-import Title from '../components/Title'
 import Skills from '../components/Skills'
 
 export default function Stack(){
@@ -49,6 +48,23 @@ export default function Stack(){
               icon: '/ts.png',
             },
           ]
+        },
+        {
+            name: 'Frameworks',
+            id: 's5',
+            specifics: [
+                {
+                    name: 'ReactJS',
+                    id: 's5-a',
+                    icon: '/react.png'
+                },
+                {
+                    name: 'NextJS',
+                    id: 's5-b',
+                    icon: '/next.png'
+                }
+            ]
+
         },
         {
           name: 'Version Control',
