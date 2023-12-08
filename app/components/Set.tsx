@@ -14,13 +14,13 @@ export default function Set({set}: any){
     return(
         <div className="bg-yellow/20 font-bold rounded-lg p-5 mt-5">
             <a 
-                className="flex flex-row gap-3 sm:text-2xl text-left items-center"
+                className="flex flex-row gap-3 sm:text-2xl text-left items-center cursor-pointer"
                 onClick={handleToggle}
             >
                 <FaAngleDown />
                 <p>{set.name}</p>
             </a>
-            <div className={`${'flex flex-wrap justify-center gap-y-4 p-5'} ${openSet === true ? '' : 'hidden'}`} >
+            <div className={`${'flex flex-wrap justify-center gap-y-4 p-5 select-none'} ${openSet === true ? '' : 'hidden'}`} >
                 {
                     skills.map((skill: any) => (
                         <Skill skill={skill} key={skill.id} />   

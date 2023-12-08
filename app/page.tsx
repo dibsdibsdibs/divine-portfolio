@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="grid md:grid-cols-2 fit-content place-items-center bg-violet">
+      <div className="grid md:grid-cols-2 fit-content place-items-center select-none bg-violet">
         <div className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-center">
           <p className="text-white font-bold">Hello! I am</p>
           <div className="flex justify-center items-center">

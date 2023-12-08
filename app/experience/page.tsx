@@ -22,7 +22,7 @@ export default function Experience(){
                 <Title title='experience' />
             </div>
             <hr className="border-4 border-yellow rounded my-5" />
-            <div className='font-semibold'>
+            <div className='font-semibold select-none'>
                 {
                     experience.map((xp:any) => (
                         <Exp exp={xp} key={xp.id}/>
