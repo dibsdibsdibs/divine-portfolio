@@ -25,11 +25,11 @@ function Header() {
       </div>
       <div className={`${"font-bold lg:flex lg:justify-between lg:w-1/4"} ${showMenu === true ? 'w-full block' : 'hidden' }`}>
         <Link 
-          href="/"
+          href="../stack"
           className='block mt-4 lg:inline-block lg:mt-0 mr-4'
           onClick={HandleMenuToggle}
         >
-          Home
+          Stack
         </Link>
         <Link 
           href="../experience"

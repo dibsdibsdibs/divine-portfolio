@@ -6,7 +6,9 @@ export default function Skills (props: any){
     
     return(
         <div className="text-center px-16 py-10 text-violet">
-            <Title title='skills' />
+            <div>
+                <Title title='stack' />
+            </div>
             <div>
                 {
                     skills.map((set: any) => (
