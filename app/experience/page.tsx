@@ -5,12 +5,12 @@ export default function Experience(){
 
     const experience = [
         {
-            id: 'exp_1',
-            year: 'Present',
-            xp: 'I am currently working as a Software Engineer Intern at The BLOKC!'
+            id: 'exp_2',
+            year: '2023',
+            xp: 'I was a Software Engineer Intern at The BLOKC!'
         },
         {
-            id: 'exp_2',
+            id: 'exp_1',
             year: '2023',
             xp: 'I finished my 200 hours internship at Aureal Industry Corp.!',
         }
