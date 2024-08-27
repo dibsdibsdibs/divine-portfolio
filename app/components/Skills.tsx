@@ -11,8 +11,8 @@ export default function Skills (props: any){
             </div>
             <div>
                 {
-                    skills.map((set: any) => (
-                        <Set set={set} key={set.id} />   
+                    skills.map((set: any, index: number) => (
+                        <Set set={set} id={'s'+index} key={'s'+index} /> 
                     ))
                 }
             </div>

@@ -2,9 +2,8 @@ import {FaAngleDown} from "react-icons/fa6"
 import Skill from './Skill'
 import { useState } from 'react'
 
-export default function Set({set}: any){
+export default function Set({ set, id }: { set: any; id: string }) {
     const skills = set.specifics
-
     const [openSet, setToggle] = useState(false)
 
     const handleToggle = () => {
@@ -22,8 +21,8 @@ export default function Set({set}: any){
             </a>
             <div className={`${'flex flex-wrap justify-center gap-y-4 p-5 select-none'} ${openSet === true ? '' : 'hidden'}`} >
                 {
-                    skills.map((skill: any) => (
-                        <Skill skill={skill} key={skill.id} />   
+                    skills.map((skill: any, index: number) => (
+                        <Skill skill={skill} key={id+'_'+index} />
                     ))
                 }
             </div>
