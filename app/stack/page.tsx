@@ -91,6 +91,11 @@ export default function Stack(){
               id: 's3-a',
               icon: '/mysql.png'
             },
+            {
+              name: 'MongoDB',
+              id: 's3-b',
+              icon: '/mongodb.png'
+            },
           ]
         },
         {
@@ -121,6 +126,27 @@ export default function Stack(){
               name: 'Figma',
               id: 's4-e',
               icon: '/figma.png'
+            },
+          ]
+        },
+        {
+          name: 'Platform',
+          id: 's5',
+          specifics: [
+            {
+              name: 'Postman',
+              id: 's5-a',
+              icon: '/postman.png'
+            },
+            {
+              name: 'Docker',
+              id: 's5-b',
+              icon: '/docker.png'
+            },
+            {
+              name: 'AWS-EC2',
+              id: 's5-c',
+              icon: '/aws-ec2.png'
             },
           ]
         }
