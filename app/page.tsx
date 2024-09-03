@@ -5,7 +5,7 @@ import About from './components/About'
 
 export default function Home() {
   const about={
-    bio:'Hello! I am Divine Grace Lavente,  an oncoming 4th year BS in Computer Science student in University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the course that I’m currently pursuing. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
+    bio:'Hello! I am Divine Grace Lavente, a BS Computer Science graduate from the University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the field of Computer Science. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
     email: 'divinelavente@gmail.com',
     linkedin: 'https://www.linkedin.com/in/divinelavente/',
     github: 'https://github.com/dibsdibsdibs',
