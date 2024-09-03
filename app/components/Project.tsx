@@ -11,7 +11,7 @@ function Project({proj}: any){
                             priority={true}
                             className='sm:h-44 sm:w-96'
                             src={proj.src}
-                            alt={proj.id}
+                            alt={proj.src}
                             width="300"
                             height="200"
                         />
