@@ -39,6 +39,12 @@ export default function Projects(){
             src: "/proj6.png",
             role: "Dev",
             link: "https://github.com/dibsdibsdibs/Mathematical-Expressions-Input-Using-Hand-Gestures",
+        },
+        {
+            name: "ISDA: Innovatice Smishing Detecting Application",
+            src: "/proj7.png",
+            role: "Dev",
+            link: "https://github.com/Kim-Arcena/Isda",
         }
     ]
 
