@@ -18,8 +18,8 @@ export default function Home() {
         <div className="relative lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-center z-10">
           <p className="text-white font-bold">Hello! I am</p>
           <div className="relative flex justify-center items-center">
-            <p className="text-yellow font-mango z-20">Divine Grace</p>
-            {/* <p className="text-pink absolute lg:mt-2 lg:ml-3 mt-1 ml-2 font-mango z-10">Divine Grace</p> */}
+            <p className="text-yellow font-mango z-30">Divine Grace</p>
+            <p className="text-pink absolute mt-2 font-mango z-20">Divine Grace</p>
           </div>
         </div>
         <Image
