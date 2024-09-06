@@ -19,3 +19,14 @@
   font-family: "Raleway";
   src: url("../public/fonts/Raleway.ttf");
 }
+
+circle,
+rect,
+line {
+  stroke-linecap: round;
+}
+
+rect,
+line{
+  fill: transparent;
+}

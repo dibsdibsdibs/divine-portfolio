@@ -1,24 +1,40 @@
 'use client';
 import Image from "next/image"
 import About from './components/About'
-
+import { motion } from "framer-motion"
+import "./globals.css";
 
 export default function Home() {
-  const about={
-    bio:'Hello! I am Divine Grace Lavente, a BS Computer Science graduate from the University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the field of Computer Science. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
+  const about = {
+    bio: 'Hello! I am Divine Grace Lavente, a BS Computer Science graduate from the University of the Philippines Visayas. Ever since I was a kid, I’ve always been drawn to experimenting in our ancient HP laptop. That curiosity drew me to the field of Computer Science. My hobbies include reading, writing, playing video games, and learning and experimenting with programming languages.',
     email: 'divinelavente@gmail.com',
     linkedin: 'https://www.linkedin.com/in/divinelavente/',
     github: 'https://github.com/dibsdibsdibs',
   };
 
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i: number) => {
+      const delay = 1 + i * 0.5;
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+          opacity: { delay, duration: 0.01 }
+        }
+      };
+    }
+  };
+
   return (
     <main>
-      <div className="grid md:grid-cols-2 fit-content place-items-center select-none bg-violet">
-        <div className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-center">
+      <div className="relative grid md:grid-cols-2 fit-content place-items-center select-none bg-violet">
+        <div className="relative lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-center z-10">
           <p className="text-white font-bold">Hello! I am</p>
-          <div className="flex justify-center items-center">
-            <p className="text-yellow font-mango z-10">Divine Grace</p>
-            <p className="text-pink absolute lg:mt-2 lg:ml-3 mt-1 ml-2 font-mango">Divine Grace</p>
+          <div className="relative flex justify-center items-center">
+            <p className="text-yellow font-mango z-20">Divine Grace</p>
+            {/* <p className="text-pink absolute lg:mt-2 lg:ml-3 mt-1 ml-2 font-mango z-10">Divine Grace</p> */}
           </div>
         </div>
         <Image
@@ -27,9 +43,51 @@ export default function Home() {
           alt='id_nobg'
           width='500'
           height='700'
+          className="z-20"
         />
+        <motion.svg
+          className="absolute inset-0 w-full h-full z-0"
+          initial="hidden"
+          animate="visible"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 500 500"
+        >
+          <motion.rect
+            width="400"
+            height="400"
+            stroke="#EBE7E6"
+            strokeWidth="1px"
+            custom={1}
+            variants={draw}
+            transform="rotate(93, 200, 200)"
+            x={75}
+            y={75}
+          />
+          <motion.rect
+            width="400"
+            height="400"
+            stroke="#EBE7E6"
+            strokeWidth="1px"
+            custom={2}
+            variants={draw}
+            transform="rotate(66, 200, 200)"
+            x={-75}
+            y={175}
+          />
+          <motion.rect
+            width="400"
+            height="400"
+            stroke="#EBE7E6"
+            strokeWidth="1px"
+            custom={3}
+            variants={draw}
+            transform="rotate(37, 200, 200)"
+            x={-275}
+            y={200}
+          />
+        </motion.svg>
       </div>
       <About id="about" about={about} />
     </main>
-  )
+  );
 }
