@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --white: #EBE8E7;
+  --white: #EBE7E6;
   --pink: #EA7186;
   --yellow: #F2C76E;
   --violet: #7A77B9;
@@ -18,4 +18,15 @@
 @font-face {
   font-family: "Raleway";
   src: url("../public/fonts/Raleway.ttf");
+}
+
+circle,
+rect,
+line {
+  stroke-linecap: round;
+}
+
+rect,
+line{
+  fill: transparent;
 }
