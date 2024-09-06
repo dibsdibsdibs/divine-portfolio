@@ -1,3 +1,4 @@
+'use client';
 import Exp from '../components/Exp'
 import Title from '../components/Title'
 

@@ -1,3 +1,4 @@
+'use client';
 import Repositories from '../components/Repositories';
 import Title from '../components/Title'
 

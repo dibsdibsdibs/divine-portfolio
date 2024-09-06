@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image"
 import About from './components/About'
-import { motion } from "framer-motion"
 import AboutBackground from "./components/AboutBackground";
 
 export default function Home() {
